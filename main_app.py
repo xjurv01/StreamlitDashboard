@@ -28,8 +28,8 @@ query_afternoon = """  SELECT
                         LIMIT 20000
                  """
 
-df_bikes_morning = pd.read_sql(sql=morning, con=engine)
-df_bikes_afternoon = pd.read_sql(sql=afternoon, con=engine)
+df_bikes_morning = pd.read_sql(sql=query_morning, con=engine)
+df_bikes_afternoon = pd.read_sql(sql=query_afternoon, con=engine)
 
 # #################
 # VIZUALIZACE
