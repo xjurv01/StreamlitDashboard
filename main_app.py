@@ -35,7 +35,7 @@ df_bikes_afternoon = pd.read_sql(sql=query_afternoon, con=engine)
 # VIZUALIZACE
 # #################
 
-st.set_page_config(layout = 'wide')
+st.set_page_config(layout ="wide")
 st.title('Moje prvni appka')
 
 page = st.sidebar.radio('Select page',['Mapa','Thomson'])
